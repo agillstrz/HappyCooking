@@ -144,7 +144,7 @@ function ModalTambah({ onClick, setOnlick }) {
                     name="resep"
                     onChange={onChange}
                     id="password1"
-                    placeholder="1.resepa./ 2.resepx/"
+                    placeholder="cth:resepA./resep2/"
                     type="text"
                   />
                 </div>
@@ -204,7 +204,7 @@ function ModalTambah({ onClick, setOnlick }) {
                       type="text"
                       name="cara"
                       onChange={onChange}
-                      placeholder="1.cara1/2.cara2./"
+                      placeholder="cara1./cara2./"
                     />
                   </div>
                 </div>
