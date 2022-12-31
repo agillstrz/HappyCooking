@@ -26,7 +26,6 @@ function Deskripsi() {
   const cara = data?.cooking_makanan_by_pk.cara.split("/");
   const resep = data?.cooking_makanan_by_pk.resep.split("/");
   const nutrisi = data?.cooking_makanan_by_pk.nutrisi?.split(",");
-
   const handleVideo = () => {
     if (Auth.isAuthorization()) {
       setOnclick(true);
@@ -116,13 +115,13 @@ function Deskripsi() {
                 onClick={handleVideo}
                 className="w-72 bg-cover border-2 active:scale-90 border-main/80 active:border-0 hover:saturate-150  transition-all duration-150 ease-linear bg-center rounded-lg cursor-pointer "
               >
-                <div
-                  className="w-full bg-cover bg-center h-full rounded-lg "
-                  style={{
-                    backgroundImage: `url(${data?.cooking_makanan_by_pk.foto})`,
-                  }}
-                >
-                  <div className="w-full h-full flex justify-center items-center">
+                <div className="w-full relative h-full rounded-lg ">
+                  <img
+                    className="absolute w-full h-full z-0"
+                    src={data?.cooking_makanan_by_pk.foto}
+                    alt=""
+                  />
+                  <div className="flex justify-center z-50 items-center absolute w-full h-full">
                     <i className="fa-solid text-main fa-3x fa-play"></i>
                   </div>
                 </div>

@@ -5,10 +5,9 @@ function Card({ data }) {
   return (
     <Link to={`/deskripsi/${data.id}`}>
       <div className="h-64 w-72 mt-2 group rounded-lg flex flex-col cursor-pointer  pb-2 justify-between bg-white">
-        <div
-          className="h-[70%] rounded-lg  bg-cover bg-center"
-          style={{ backgroundImage: `url(${data.foto})` }}
-        ></div>
+        <div className="h-[70%] relative rounded-lg ">
+          <img className="w-full h-full absolute" src={data.foto} alt="" />
+        </div>
         <div className="text-black w-full px-3 flex flex-col justify-between h-[30%]   ">
           <h1 className="font-bold text-center group-hover:underline">
             {data.nama}

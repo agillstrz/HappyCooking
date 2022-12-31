@@ -54,10 +54,13 @@ function Hero() {
                   key={m.id}
                   className="h-44 w-48 mt-2 rounded-lg flex flex-col justify-between bg-white"
                 >
-                  <div
-                    className="h-[70%]  bg-cover bg-center"
-                    style={{ backgroundImage: `url(${m.foto})` }}
-                  ></div>
+                  <div className="h-[70%] relative rounded-lg ">
+                    <img
+                      className="w-full h-full absolute"
+                      src={m.foto}
+                      alt=""
+                    />
+                  </div>
                   <div className="text-black w-full h-[30%]   ">
                     <h1 className="font-bold text-center">{m.nama}</h1>
                     <div className="flex text-[12px] px-1  pb-1  justify-between  ">
