@@ -1,5 +1,9 @@
 import React from "react";
-
+import sheka from "../../assets/img/sheka.jpg";
+import tegar from "../../assets/img/tegar.jpg";
+import adinda from "../../assets/img/adinda.jpg";
+import aqzal from "../../assets/img/aqzal.jpg";
+import aul from "../../assets/img/aul.jpg";
 function About() {
   return (
     <div className="p-5 pb-24 bg-btn/30">
@@ -21,10 +25,10 @@ function About() {
       </h1>
       <div className="grid grid-cols-3 place-items-center">
         <div>
-          <div className="bg-main/70 flex flex-col items-center p-3 rounded-full shadow-lg w-56 h-60">
+          <div className="bg-main/70 flex flex-col items-center p-2 rounded-full shadow-lg w-56 h-60">
             <img
               className="w-full h-full rounded-full"
-              src="https://firebasestorage.googleapis.com/v0/b/cooking-c2b68.appspot.com/o/ce5c98670c655c86fd72b37dc4e2dbde.jpg?alt=media&token=865a4c84-e9d6-4bdd-91df-478041fdffc3"
+              src={tegar}
               alt="Default avatar"
             />
             <p className="text-md mt-8 font-bold capitalize text-center">
@@ -34,10 +38,10 @@ function About() {
           </div>
         </div>
         <div>
-          <div className="bg-main/70 flex flex-col items-center p-3 rounded-full shadow-lg w-56 h-60">
+          <div className="bg-main/70 flex flex-col items-center p-2 rounded-full shadow-lg w-56 h-60">
             <img
               className="w-full h-full rounded-full"
-              src="https://firebasestorage.googleapis.com/v0/b/cooking-c2b68.appspot.com/o/ce5c98670c655c86fd72b37dc4e2dbde.jpg?alt=media&token=865a4c84-e9d6-4bdd-91df-478041fdffc3"
+              src={aqzal}
               alt="Default avatar"
             />
             <p className=" text-md mt-8 font-bold capitalize text-center">
@@ -47,12 +51,8 @@ function About() {
           </div>
         </div>
         <div>
-          <div className="bg-main/70 flex flex-col items-center p-3 rounded-full shadow-lg w-56 h-60">
-            <img
-              className="w-full h-full rounded-full"
-              src="https://firebasestorage.googleapis.com/v0/b/cooking-c2b68.appspot.com/o/ce5c98670c655c86fd72b37dc4e2dbde.jpg?alt=media&token=865a4c84-e9d6-4bdd-91df-478041fdffc3"
-              alt="Default avatar"
-            />
+          <div className="bg-main/70 flex flex-col items-center p-2 rounded-full shadow-lg w-56 h-60">
+            <img className="w-full h-full rounded-full" src={sheka} />
             <p className=" text-md mt-8 font-bold capitalize text-center">
               SHEKA TRI PUTRA DARMA
             </p>
@@ -60,10 +60,10 @@ function About() {
           </div>
         </div>
         <div className="flex w-full justify-center  col-span-3 gap-x-44">
-          <div className="bg-main/70 flex flex-col items-center p-3 rounded-full shadow-lg w-56 h-60">
+          <div className="bg-main/70 flex flex-col items-center p-2 rounded-full shadow-lg w-56 h-60">
             <img
               className="w-full h-full rounded-full"
-              src="https://firebasestorage.googleapis.com/v0/b/cooking-c2b68.appspot.com/o/ce5c98670c655c86fd72b37dc4e2dbde.jpg?alt=media&token=865a4c84-e9d6-4bdd-91df-478041fdffc3"
+              src={adinda}
               alt="Default avatar"
             />
             <p className=" text-md mt-8 font-bold capitalize text-center">
@@ -71,10 +71,10 @@ function About() {
             </p>
             <p className="font-semibold">10120033</p>
           </div>
-          <div className="bg-main/70 flex flex-col items-center p-3 rounded-full shadow-lg w-56 h-60">
+          <div className="bg-main/70 flex flex-col items-center p-2 rounded-full shadow-lg w-56 h-60">
             <img
               className="w-full h-full rounded-full"
-              src="https://firebasestorage.googleapis.com/v0/b/cooking-c2b68.appspot.com/o/9f7555bed1ce3b422fb4fd43f9e4ae2f.jpg?alt=media&token=7ba5bcc1-d5e9-42ee-9f1a-2b8f9ca70460"
+              src={aul}
               alt="Default avatar"
             />
             <p className=" text-md mt-8 font-bold capitalize text-center">

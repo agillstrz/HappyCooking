@@ -21,10 +21,9 @@ function CardMenu({ data }) {
               </p>
             </div>
           </div>
-          <div
-            className="w-[40%] rounded-xl  bg-cover bg-center "
-            style={{ backgroundImage: `url(${data.foto})` }}
-          ></div>
+          <div className="w-[40%] rounded-xl relative">
+            <img className="w-full h-full" src={data.foto} alt="" />
+          </div>
         </div>
         <div className="bg-[#ABABAB] mx-4 flex justify-between text-sm text-white border border-main rounded-md p-1 font-semibold">
           <div className="flex gap-x-1 items-center">
